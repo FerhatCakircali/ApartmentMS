@@ -1,0 +1,5 @@
+from database import DB_NAME, DB_HOST, DB_PASSWORD, DB_USER
+
+class Config:
+    SQLALCHEMY_DATABASE_URI = f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
